@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── CSS Variables ────────────────────────────────────────── */
+:root {
+  --color-background: #F8F5F0;
+  --color-ink: #1A1A18;
+  --color-accent: #1E4D35;
+  --color-accent-light: #2D6B4A;
+  --color-ink-muted: #5A5A56;
+  --color-ink-faint: #9A9A94;
+  --color-rule: #D8D4CE;
+}
+
+/* ── Base Resets ──────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-ink);
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Subtle grain texture overlay */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+}
+
+/* ── Typography ───────────────────────────────────────────── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-dm-serif), Georgia, serif;
+}
+
+/* Small-caps utility */
+.label-caps {
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-ink-muted);
+}
+
+/* Horizontal rule */
+.rule {
+  border: none;
+  border-top: 1px solid var(--color-rule);
+}
+
+/* ── Section spacing ──────────────────────────────────────── */
+.section-pad {
+  padding-top: clamp(5rem, 12vw, 10rem);
+  padding-bottom: clamp(5rem, 12vw, 10rem);
+}
+
+/* ── Selection color ──────────────────────────────────────── */
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-background);
+}
+
+/* ── Scrollbar (subtle) ───────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-rule);
+  border-radius: 2px;
+}

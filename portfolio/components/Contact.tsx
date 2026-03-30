@@ -109,7 +109,7 @@ export default function Contact() {
                   className="inline-flex items-center gap-2 border border-background/40 text-background font-sans font-medium px-5 py-3.5 text-sm tracking-wide hover:bg-background/10 transition-colors"
                 >
                   {link.platform === "LinkedIn" ? <LinkedInIcon /> : link.platform === "GitHub" ? <GitHubIcon /> : <TwitterIcon />}
-                  {link.label}
+                  {link.platform}
                 </a>
               ))}
 

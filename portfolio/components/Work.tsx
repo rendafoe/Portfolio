@@ -4,19 +4,17 @@ import { useRef, useState } from "react";
 import { motion, useInView, AnimatePresence } from "framer-motion";
 import { projects, projectCategories, type ProjectCategory, type LinkType } from "@/content";
 
-const LINK_ICONS: Record<LinkType, string> = {
-  website: "↗",
+const WORK_LINK_ICONS: Record<Exclude<LinkType, "website">, string> = {
   tweet: "𝕏",
   article: "⊞",
 };
 
-const LINK_LABELS: Record<LinkType, string> = {
-  website: "Website",
-  tweet: "Tweet",
+const WORK_LINK_LABELS: Record<Exclude<LinkType, "website">, string> = {
+  tweet: "Example",
   article: "Article",
 };
 
-function LinkBadge({ type, url }: { type: LinkType; url: string }) {
+function LinkBadge({ label, icon, url }: { label: string; icon: string; url: string }) {
   return (
     <a
       href={url}
@@ -24,8 +22,8 @@ function LinkBadge({ type, url }: { type: LinkType; url: string }) {
       rel="noopener noreferrer"
       className="inline-flex items-center gap-1.5 label-caps text-accent border border-accent/30 px-2.5 py-1 hover:bg-accent hover:text-background transition-colors"
     >
-      <span>{LINK_ICONS[type]}</span>
-      {LINK_LABELS[type]}
+      <span>{icon}</span>
+      {label}
     </a>
   );
 }
@@ -71,7 +69,7 @@ export default function Work() {
               variants={fadeUp}
               className="font-serif text-display-md text-ink mb-8"
             >
-              Selected clients &amp; campaigns.
+              Selected products &amp; clients.
             </motion.h2>
 
             {/* Filter tabs */}
@@ -154,10 +152,19 @@ export default function Work() {
                       </div>
                     )}
 
-                    {/* Link */}
-                    {project.linkUrl && project.linkType && (
-                      <div>
-                        <LinkBadge type={project.linkType} url={project.linkUrl} />
+                    {/* Links */}
+                    {(project.clientUrl || (project.workUrl && project.workLinkType)) && (
+                      <div className="flex flex-wrap gap-2">
+                        {project.clientUrl && (
+                          <LinkBadge label="Website" icon="↗" url={project.clientUrl} />
+                        )}
+                        {project.workUrl && project.workLinkType && (
+                          <LinkBadge
+                            label={WORK_LINK_LABELS[project.workLinkType]}
+                            icon={WORK_LINK_ICONS[project.workLinkType]}
+                            url={project.workUrl}
+                          />
+                        )}
                       </div>
                     )}
                   </div>

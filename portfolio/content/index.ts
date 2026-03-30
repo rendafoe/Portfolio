@@ -64,15 +64,17 @@ export const timeline: TimelineEntry[] = [
     years: "2021–2026",
     role: "Co-Founder & Head of Product Marketing",
     company: "SHILLR",
-    location: "Minneapolis, MN",
+    location: "Minneapolis, MN (Remote)",
     summary:
-      "Built and scaled a Web3 marketing agency from zero to 40 clients, driving $50M+ in client sales across every major vertical of crypto.",
+      "Built and scaled a Web3 marketing agency from zero to 40 clients, driving $50M+ in client sales through product marketing.",
     bullets: [
-      "Co-founded SHILLR and built internal operations from scratch, scaling the team to 8 full-time members",
-      "Led go-to-market strategy for 40+ clients across NFTs, DeFi, L2s, DAOs, and gaming",
-      "Executed launch for Quine by Larva Labs ($14M in sales), Nifty Island (1.2M impressions at launch), and Alien Frens (31K ETH lifetime sales)",
-      "Managed social media for Flamingo DAO and The LAO, growing engagement 120% YOY",
-      "Positioned and launched Prohibition Art — the first Art Blocks contract deployed on an L2",
+      "Led GTM strategy and product launch campaigns for 40 Web3 clients, driving $50M+ in sales revenue across NFTs, SocialFi, DAOs, Gaming, Tooling & L2s",
+      "Developed positioning, messaging, and go-to-market execution for key launches including “Quine” by Larva Labs ($14M in sales), Prohibition Art (First Art Blocks Contract on L2), Nifty Island (1.2M Impressions in Launch Month) & Alien Frens (31k ETH in Lifetime Sales)",
+      "Authored email newsletters, leveraged influencer network & implemented token incentives to roll out the Art Blocks 500, a campaign which resulted in 5 rapid NFT sellouts & 11% follower growth over 4 months",
+      "Consulted on product positioning and audience development for early-stage products including Genie (Acquired by Uniswap), Hume (AI Record Label) & mmERCH (Generative Fashion)",
+      "Owned social media strategy and operations for institutional DAOs covering Flamingo DAO, The LAO, XX DAO, Neon DAO & Glimmer DAO, growing engagement +120% YOY",
+      "Scaled and led a team of 8, establishing marketing operations, client onboarding & best practices",
+      "Hosted community events across NYC, Miami, and Lisbon; partnered with Base, OpenSea & Proof Collective",
     ],
   },
   {
@@ -81,25 +83,37 @@ export const timeline: TimelineEntry[] = [
     company: "Best Buy",
     location: "Richfield, MN",
     summary:
-      "Drove customer engagement +13% YOY through data-driven insights that directly shaped marketing campaigns across 10 product categories.",
+      "Discovered and reported fact-based marketing insights that influenced product campaigns.",
     bullets: [
-      "Built analytical frameworks that influenced marketing spend allocation across 10 product categories",
-      "Partnered with campaign teams to translate data insights into actionable strategy",
-      "Drove customer engagement +13% YOY through targeted recommendations",
+      "Drove customer engagement by +13% YOY, providing insights that directly influenced marketing campaigns, including customer profiles by category shopped and consumer journey analyses",
+      "Partnered with cross-functional marketing teams to test business hypotheses & align on strategy across 10 categories",
+      "Reported monthly analytics that highlighted changes in customer behaviors over time, broken down by demographic traits, channels shopped & geographic location",
     ],
   },
   {
-    years: "2016–2020",
-    role: "Analyst, Business Intelligence & Forecasting",
+    years: "2018–2020",
+    role: "Strategist, Business Intelligence",
     company: "Best Buy",
     location: "Richfield, MN",
     summary:
-      "Grew revenue +22% across 5 business units through BI consulting, physical space optimization, and demand forecasting for a $300M business.",
+      "Leveraged hypothesis testing to increase efficiency and productivity of brick and mortar stores.",
     bullets: [
-      "Grew revenue +22% across 5 business units as an embedded BI consultant",
-      "Optimized physical retail space layout across 1,000 Best Buy locations",
-      "Forecasted demand for a $300M business, improving inventory accuracy and reducing overstock",
-      "Built and maintained executive reporting dashboards used by senior leadership",
+      "Acted as an intelligence consultant by utilizing sales & demographics data, uncovering KPIs & category trends to grow revenue +22% across 5 business units",
+      "Measured and published “Return on Space” financial reports that validated the effectiveness of company initiatives and told concise narratives to leadership",
+      "Optimized physical space for profitability across 1,000 Brick & Mortar locations, making recommendations for planogram lengths based on demand elasticity",
+    ],
+  },
+    {
+    years: "2016–2017",
+    role: "Analyst, Product Demand Forecasting",
+    company: "Best Buy",
+    location: "Richfield, MN",
+    summary:
+      "Supported aggressive category growth by accurately forecasting product demand.",
+    bullets: [
+      "Analyzed historical sales data to forecast demand for a $300M business; managed 1,300 products that span 1,000 store locations nationwide",
+      "Collaborated effectively with vendor partners, staying within 6% forecast accuracy to ensure healthy inventory levels",
+      "Delivered accurate and unbiased forecasts, contributing to 17% growth in the business YOY",
     ],
   },
 ];
@@ -123,8 +137,11 @@ export type Project = {
   category: Exclude<ProjectCategory, "All">;
   description: string;
   result?: string;
-  linkUrl?: string;
-  linkType?: LinkType;
+  /** Direct link to the client's website */
+  clientUrl?: string;
+  /** Link to an example of work done for this client */
+  workUrl?: string;
+  workLinkType?: Exclude<LinkType, "website">;
   featured?: boolean;
   /** Path relative to /public, e.g. "/work/art-blocks.png" */
   image?: string;
@@ -138,51 +155,46 @@ export const projects: Project[] = [
     category: "NFT & Collectibles",
     description:
       "Go-to-market strategy and community marketing for one of the most recognized generative art platforms in Web3. Led positioning, launch campaigns, and collector acquisition across primary and secondary markets.",
-    result: "Primary sales supported across multiple drops",
-    linkUrl: "https://artblocks.io",
-    linkType: "website",
+    clientUrl: "https://artblocks.io",
+    workUrl: "https://x.com/artblocks_io/status/1953120356945842542?s=20",
+    workLinkType: "tweet",
     featured: true,
   },
   {
     id: "flamingo-dao",
     name: "Flamingo DAO",
-    image: "/work/flamingo.png",
+    image: "/work/flamingo-dao.jpeg",
     category: "NFT & Collectibles",
     description:
       "Member marketing and communications strategy for a leading NFT-focused investment DAO. Developed messaging frameworks, community engagement strategy, and public-facing positioning.",
-    linkUrl: undefined,
-    linkType: "website",
     featured: true,
   },
   {
     id: "the-lao",
     name: "The LAO",
+    image: "/work/the-lao.jpeg",
     category: "DAO",
     description:
       "Marketing strategy and positioning for one of the first legally compliant venture DAOs in the US. Helped define the narrative around decentralized venture at a pivotal moment for the space.",
-    linkUrl: undefined,
-    linkType: "website",
     featured: true,
   },
   {
     id: "genie",
     name: "Genie (acquired by Uniswap)",
+    image: "/work/genie.png",
     category: "DeFi",
     description:
       "Growth marketing support ahead of Uniswap acquisition. Built brand awareness and user acquisition strategies in the emerging NFT aggregator space — helping the team tell a clear story at a critical inflection point.",
     result: "Acquired by Uniswap",
-    linkUrl: undefined,
-    linkType: "article",
     featured: true,
   },
   {
     id: "nifty-island",
     name: "Nifty Island",
+    image: "/work/nifty-island.jpeg",
     category: "Web3 Gaming",
     description:
       "Player acquisition and community GTM strategy for a social gaming platform built on Web3. Led launch-phase marketing, community flywheel design, and cross-ecosystem partnership narratives.",
-    linkUrl: undefined,
-    linkType: "website",
     featured: false,
   },
 ];
@@ -225,6 +237,10 @@ export const contact = {
     {
       platform: "X",
       url: "https://x.com/bernardo_cafe", // Update with real URL,
+    },
+    {
+      platform: "GitHub",
+      url: "https://github.com/rendafoe", // Update with your GitHub username
     },
   ],
   resumeUrl: "/resume.pdf",

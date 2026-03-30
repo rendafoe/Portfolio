@@ -16,7 +16,7 @@ function RotatingTitle({ lines }: { lines: string[] }) {
   }, [lines.length]);
 
   return (
-    <div className="h-8 overflow-hidden relative">
+    <div className="h-8 overflow-hidden relative flex-1">
       <AnimatePresence mode="wait">
         <motion.span
           key={index}
@@ -37,7 +37,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col justify-center overflow-hidden px-6 lg:px-12"
+      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-6 lg:px-12"
     >
       {/* Subtle drifting background accent shape */}
       <motion.div
@@ -54,7 +54,7 @@ export default function Hero() {
         style={{ filter: "blur(80px)" }}
       />
 
-      <div className="max-w-content mx-auto w-full pt-24 pb-16">
+      <div className="max-w-2xl w-full pt-24 pb-16">
         {/* Section label */}
         <motion.p
           initial={{ opacity: 0 }}

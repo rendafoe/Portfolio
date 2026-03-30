@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 import { about } from "@/content";
 
@@ -21,17 +22,35 @@ export default function About() {
     <section id="about" className="section-pad px-6 lg:px-12 border-t border-rule">
       <div className="max-w-content mx-auto" ref={ref}>
         <div className="grid lg:grid-cols-[200px_1fr] gap-12 lg:gap-20">
-          {/* Sticky label column */}
+          {/* Sticky label + headshot column */}
           <div className="lg:pt-1">
-            <motion.p
-              initial="hidden"
-              animate={inView ? "visible" : "hidden"}
-              custom={0}
-              variants={fadeUp}
-              className="label-caps sticky top-24"
-            >
-              About
-            </motion.p>
+            <div className="sticky top-24 flex flex-row lg:flex-col gap-6 lg:gap-0 items-center lg:items-start">
+              <motion.p
+                initial="hidden"
+                animate={inView ? "visible" : "hidden"}
+                custom={0}
+                variants={fadeUp}
+                className="label-caps lg:mb-6"
+              >
+                About
+              </motion.p>
+              <motion.div
+                initial="hidden"
+                animate={inView ? "visible" : "hidden"}
+                custom={1}
+                variants={fadeUp}
+                className="w-20 lg:w-full flex-shrink-0"
+              >
+                <Image
+                  src="/port-headshot2.png"
+                  width={400}
+                  height={400}
+                  style={{ width: "100%", height: "auto" }}
+                  alt="Brian Brown"
+                  sizes="(max-width: 1024px) 80px, 200px"
+                />
+              </motion.div>
+            </div>
           </div>
 
           {/* Content column */}
@@ -57,7 +76,9 @@ export default function About() {
                 variants={fadeUp}
                 className="font-sans text-lg lg:text-xl text-ink leading-relaxed"
               >
-                {para}
+                {para.split(/\*\*(.+?)\*\*/g).map((chunk, j) =>
+                  j % 2 === 1 ? <strong key={j}>{chunk}</strong> : chunk
+                )}
               </motion.p>
             ))}
           </div>

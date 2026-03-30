@@ -31,7 +31,7 @@ export default function Personal() {
             variants={fadeUp}
             className="label-caps sticky top-24"
           >
-            Personal
+            Running
           </motion.p>
 
           <div className="space-y-16 lg:space-y-20">
@@ -76,98 +76,6 @@ export default function Personal() {
               </motion.div>
             </div>
 
-            <div className="border-t border-rule" />
-
-            {/* ── YouTube ── */}
-            <div>
-              <motion.h2
-                initial="hidden"
-                animate={inView ? "visible" : "hidden"}
-                custom={4}
-                variants={fadeUp}
-                className="font-serif text-display-md text-ink mb-6"
-              >
-                {personal.youtube.headline}
-              </motion.h2>
-
-              <motion.p
-                initial="hidden"
-                animate={inView ? "visible" : "hidden"}
-                custom={5}
-                variants={fadeUp}
-                className="font-sans text-lg text-ink-muted leading-relaxed max-w-2xl mb-8"
-              >
-                {personal.youtube.copy}
-              </motion.p>
-
-              {/* Featured video or channel link */}
-              {personal.youtube.featuredVideoId ? (
-                <motion.div
-                  initial="hidden"
-                  animate={inView ? "visible" : "hidden"}
-                  custom={6}
-                  variants={fadeUp}
-                  className="relative w-full max-w-2xl aspect-video bg-ink overflow-hidden"
-                >
-                  <iframe
-                    src={`https://www.youtube.com/embed/${personal.youtube.featuredVideoId}`}
-                    title="The Trail Experience"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className="absolute inset-0 w-full h-full"
-                  />
-                </motion.div>
-              ) : (
-                <motion.div
-                  initial="hidden"
-                  animate={inView ? "visible" : "hidden"}
-                  custom={6}
-                  variants={fadeUp}
-                >
-                  <a
-                    href={personal.youtube.channelUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-3 border border-ink text-ink font-sans font-medium px-7 py-3.5 text-sm tracking-wide hover:bg-ink hover:text-background transition-colors group"
-                  >
-                    <span className="w-5 h-5 flex items-center justify-center bg-[#FF0000] text-white text-xs font-bold">
-                      ▶
-                    </span>
-                    Watch The Trail Experience
-                    {personal.youtube.subscriberCount && (
-                      <span className="label-caps text-ink-faint ml-1">
-                        {personal.youtube.subscriberCount} subs
-                      </span>
-                    )}
-                  </a>
-                </motion.div>
-              )}
-            </div>
-
-            <div className="border-t border-rule" />
-
-            {/* ── Crypto ── */}
-            <div>
-              <motion.h2
-                initial="hidden"
-                animate={inView ? "visible" : "hidden"}
-                custom={7}
-                variants={fadeUp}
-                className="font-serif text-display-md text-ink mb-6"
-              >
-                {personal.crypto.headline}
-              </motion.h2>
-
-              <motion.p
-                initial="hidden"
-                animate={inView ? "visible" : "hidden"}
-                custom={8}
-                variants={fadeUp}
-                className="font-sans text-lg text-ink-muted leading-relaxed max-w-2xl"
-              >
-                {personal.crypto.copy}
-              </motion.p>
-            </div>
           </div>
         </div>
       </div>

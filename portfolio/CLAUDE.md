@@ -33,4 +33,4 @@ Single-page Next.js 16 App Router site. The page is a vertical scroll with 6 anc
 - Colors: `#F8F5F0` bg / `#1A1A18` ink / `#1E4D35` accent
 - Fonts: `font-serif` = DM Serif Display, `font-sans` = DM Sans
 - Small-caps labels use the `.label-caps` utility class (defined in `globals.css`)
-- No headshot or images in the About section — typography only
+- Headshot `/public/port-headshot2.png` is displayed in the About section's sticky left column (small circle on mobile, portrait 3:4 on desktop)

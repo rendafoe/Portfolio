@@ -61,7 +61,7 @@ export default function Work() {
             variants={fadeUp}
             className="label-caps sticky top-24"
           >
-            Work
+            Portfolio
           </motion.p>
           <div>
             <motion.h2
@@ -108,7 +108,7 @@ export default function Work() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="grid md:grid-cols-2 gap-px bg-rule"
+              className="grid md:grid-cols-2 gap-8"
             >
               {filtered.map((project, i) => (
                 <motion.div
@@ -117,36 +117,50 @@ export default function Work() {
                   animate={inView ? "visible" : "hidden"}
                   custom={i + 2}
                   variants={fadeUp}
-                  className="bg-background p-8 flex flex-col gap-5 group hover:bg-[#F2EFE9] transition-colors"
+                  className="bg-background flex flex-col group hover:bg-[#F2EFE9] transition-colors"
                 >
-                  {/* Category */}
-                  <span className="label-caps text-accent">{project.category}</span>
-
-                  {/* Project name */}
-                  <h3 className="font-serif text-2xl text-ink leading-tight">
-                    {project.name}
-                  </h3>
-
-                  {/* Description */}
-                  <p className="font-sans text-sm text-ink-muted leading-relaxed flex-1">
-                    {project.description}
-                  </p>
-
-                  {/* Result highlight */}
-                  {project.result && (
-                    <div className="border-t border-rule pt-4">
-                      <span className="font-sans text-sm font-medium text-ink">
-                        ✦ {project.result}
-                      </span>
+                  {/* Hero image */}
+                  {project.image && (
+                    <div className="w-full h-[180px] overflow-hidden border-b border-rule">
+                      <img
+                        src={project.image}
+                        alt={project.name}
+                        className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
+                      />
                     </div>
                   )}
 
-                  {/* Link */}
-                  {project.linkUrl && project.linkType && (
-                    <div>
-                      <LinkBadge type={project.linkType} url={project.linkUrl} />
-                    </div>
-                  )}
+                  {/* Card body */}
+                  <div className="p-8 flex flex-col gap-5 flex-1">
+                    {/* Category */}
+                    <span className="label-caps text-accent">{project.category}</span>
+
+                    {/* Project name */}
+                    <h3 className="font-serif text-2xl text-ink leading-tight">
+                      {project.name}
+                    </h3>
+
+                    {/* Description */}
+                    <p className="font-sans text-sm text-ink-muted leading-relaxed flex-1">
+                      {project.description}
+                    </p>
+
+                    {/* Result highlight */}
+                    {project.result && (
+                      <div className="border-t border-rule pt-4">
+                        <span className="font-sans text-sm font-medium text-ink">
+                          ✦ {project.result}
+                        </span>
+                      </div>
+                    )}
+
+                    {/* Link */}
+                    {project.linkUrl && project.linkType && (
+                      <div>
+                        <LinkBadge type={project.linkType} url={project.linkUrl} />
+                      </div>
+                    )}
+                  </div>
                 </motion.div>
               ))}
 

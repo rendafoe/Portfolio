@@ -123,7 +123,6 @@ export const timeline: TimelineEntry[] = [
 export type ProjectCategory =
   | "All"
   | "NFT & Collectibles"
-  | "DeFi"
   | "Web3 Gaming"
   | "L2 & Infrastructure"
   | "Personal"
@@ -142,6 +141,8 @@ export type Project = {
   /** Link to an example of work done for this client */
   workUrl?: string;
   workLinkType?: Exclude<LinkType, "website">;
+  /** Link to a client testimonial */
+  testimonialUrl?: string;
   featured?: boolean;
   /** Path relative to /public, e.g. "/work/art-blocks.png" */
   image?: string;
@@ -161,10 +162,38 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    id: "quine",
+    name: "Quine by Larva Labs",
+    image: "/work/quine.jpeg",
+    category: "NFT & Collectibles",
+    description:
+      "",
+    clientUrl: "https://larvalabs.com/quine",
+    workUrl: "https://x.com/artblocks_io/status/1975591966944440521?s=20",
+    workLinkType: "tweet",
+    testimonialUrl: "https://x.com/larvalabs/status/1976754201557356689?s=20",
+    featured: true,
+  },
+  {
+    id: "gas-wars",
+    name: "Gas Wars by Jack Butcher",
+    image: "/work/jack-butcher.png",
+    category: "NFT & Collectibles",
+    description:
+      "",
+    clientUrl: "https://www.artblocks.io/exhibitions/gas-wars-by-jack-butcher",
+    workUrl: "https://x.com/artblocks_io/status/1968021508522963293?s=20",
+    workLinkType: "tweet",
+    featured: true,
+  },
+  {
     id: "flamingo-dao",
     name: "Flamingo DAO",
     image: "/work/flamingo-dao.jpeg",
-    category: "NFT & Collectibles",
+    category: "DAO",
+    clientUrl: "https://x.com/FLAMINGODAO",
+    workUrl: "https://x.com/FLAMINGODAO/status/1863991996035064205?s=20",
+    workLinkType: "tweet",
     description:
       "Member marketing and communications strategy for a leading NFT-focused investment DAO. Developed messaging frameworks, community engagement strategy, and public-facing positioning.",
     featured: true,
@@ -174,18 +203,59 @@ export const projects: Project[] = [
     name: "The LAO",
     image: "/work/the-lao.jpeg",
     category: "DAO",
+    clientUrl: "https://x.com/TheLAOOfficial",
+    workUrl: "https://x.com/TheLAOOfficial/status/1907440371241562131",
+    workLinkType: "tweet",
     description:
-      "Marketing strategy and positioning for one of the first legally compliant venture DAOs in the US. Helped define the narrative around decentralized venture at a pivotal moment for the space.",
+      "",
+    featured: true,
+  },
+  {
+    id: "xx",
+    name: "XX DAO",
+    image: "/work/xx-dao.jpeg",
+    category: "DAO",
+    clientUrl: "https://x.com/xxdao_xyz",
+    workUrl: "https://x.com/xxdao_xyz/status/1883944319251271916?s=20",
+    workLinkType: "tweet",
+    description:
+      "",
+    featured: true,
+  },
+  {
+    id: "neon",
+    name: "Neon DAO",
+    image: "/work/neon-dao.jpeg",
+    category: "DAO",
+    clientUrl: "https://x.com/neon_dao",
+    workUrl: "https://x.com/neon_dao/status/1944765042953445632?s=20",
+    workLinkType: "tweet",
+    description:
+      "",
+    featured: true,
+  },
+  {
+    id: "glimmer",
+    name: "Glimmer DAO",
+    image: "/work/glimmer-dao.jpeg",
+    category: "DAO",
+    clientUrl: "https://x.com/glimmerdao",
+    workUrl: "https://x.com/glimmerdao/status/1945898854227771438?s=20",
+    workLinkType: "tweet",
+    description:
+      "",
     featured: true,
   },
   {
     id: "genie",
     name: "Genie (acquired by Uniswap)",
     image: "/work/genie.png",
-    category: "DeFi",
+    category: "L2 & Infrastructure",
+    clientUrl: "https://x.com/geniexyz",
+    workUrl: "https://x.com/shillrxyz/status/1424821743827435529",
+    workLinkType: "tweet",
     description:
       "Growth marketing support ahead of Uniswap acquisition. Built brand awareness and user acquisition strategies in the emerging NFT aggregator space — helping the team tell a clear story at a critical inflection point.",
-    result: "Acquired by Uniswap",
     featured: true,
   },
   {
@@ -193,16 +263,187 @@ export const projects: Project[] = [
     name: "Nifty Island",
     image: "/work/nifty-island.jpeg",
     category: "Web3 Gaming",
+    clientUrl: "https://www.niftyisland.com/",
+    workUrl: "https://x.com/niftyisland/status/1737558987019587770?s=20",
+    workLinkType: "tweet",
     description:
       "Player acquisition and community GTM strategy for a social gaming platform built on Web3. Led launch-phase marketing, community flywheel design, and cross-ecosystem partnership narratives.",
     featured: false,
+  },
+  {
+    id: "prohibition",
+    name: "Prohibition Art",
+    image: "/work/prohibition.jpeg",
+    category: "NFT & Collectibles",
+    description:
+      "",
+    clientUrl: "https://www.artblocks.io/partners/prohibition",
+    workUrl: "https://x.com/ProhibitionArt/status/1678453894735699979?s=20",
+    workLinkType: "tweet",
+    featured: true,
+  },
+  {
+    id: "konsek",
+    name: "Konsek",
+    image: "/work/konsek.jpeg",
+    category: "Personal",
+    description:
+      "",
+    clientUrl: "https://konsek.vercel.app/",
+    featured: true,
+  },
+  {
+    id: "hologram",
+    name: "Hologram",
+    image: "/work/hologram.jpeg",
+    category: "L2 & Infrastructure",
+    description:
+      "",
+    clientUrl: "https://holoworld.com/",
+    workUrl: "https://x.com/HologramLabs/status/1573022294171353088",
+    workLinkType: "tweet",
+    featured: true,
+  },
+  {
+    id: "hume",
+    name: "Hume",
+    image: "/work/hume.jpeg",
+    category: "NFT & Collectibles",
+    description:
+      "",
+    clientUrl: "https://www.wearehume.com/",
+    workUrl: "https://x.com/wearehume/status/1549781634517307393",
+    workLinkType: "tweet",
+    featured: true,
+  },
+  {
+    id: "dour-darcels",
+    name: "Dour Darcels",
+    image: "/work/darcels.png",
+    category: "NFT & Collectibles",
+    description:
+      "",
+    clientUrl: "https://www.dourdarcels.io/",
+    workUrl: "https://x.com/DourDarcelsNFT/status/1499163571548082176?s=20",
+    workLinkType: "tweet",
+    featured: true,
+  },
+  {
+    id: "chain-runners",
+    name: "Chain Runners",
+    image: "/work/chain-runners.jpeg",
+    category: "Web3 Gaming",
+    description:
+      "",
+    clientUrl: "https://x.com/chain_runners",
+    workUrl: "https://x.com/chain_runners/status/1562886024836960258?s=20",
+    workLinkType: "tweet",
+    featured: true,
+  },
+  {
+    id: "poap",
+    name: "POAP",
+    image: "/work/poap.jpeg",
+    category: "NFT & Collectibles",
+    description:
+      "",
+    clientUrl: "https://poap.xyz/",
+    workUrl: "https://x.com/poapxyz/status/1435642235681484820?s=20",
+    workLinkType: "tweet",
+    featured: true,
+  },
+  {
+    id: "alien-frens",
+    name: "Alien Frens",
+    image: "/work/alien-frens.png",
+    category: "NFT & Collectibles",
+    description:
+      "",
+    clientUrl: "https://x.com/alienfrens",
+    workUrl: "https://x.com/alienfrens/status/1469383208210866186",
+    workLinkType: "tweet",
+    featured: true,
+  },
+  {
+    id: "nff",
+    name: "Non-Fungible Fungi",
+    image: "/work/nff.jpeg",
+    category: "NFT & Collectibles",
+    description:
+      "",
+    clientUrl: "https://x.com/FungibleFungi",
+    featured: true,
+  },
+  {
+    id: "mmerch",
+    name: "mmERCH",
+    image: "/work/mmerch.jpeg",
+    category: "NFT & Collectibles",
+    description:
+      "",
+    clientUrl: "https://mmerch.com/",
+    workUrl: "https://x.com/shillrxyz/status/1836527270665896214?s=20",
+    workLinkType: "tweet",
+    featured: true,
+  },
+  {
+    id: "skill-issue",
+    name: "Skill Issue",
+    image: "/work/skill-issue.jpeg",
+    category: "NFT & Collectibles",
+    description:
+      "",
+    featured: true,
+  },
+  {
+    id: "garden",
+    name: "The Garden by SHILLR",
+    image: "/work/garden.jpeg",
+    category: "NFT & Collectibles",
+    description:
+      "",
+    clientUrl: "https://x.com/shillrxyz/status/1775228691276001607",
+    featured: true,
+  },
+  {
+    id: "mobile-gallery",
+    name: "Mobile Art Gallery by SHILLR",
+    image: "/work/van.jpeg",
+    category: "NFT & Collectibles",
+    description:
+      "",
+    clientUrl: "https://x.com/shillrxyz/status/1592595927558418432",
+    featured: true,
+  },
+  {
+    id: "generative-goods",
+    name: "Generative Goods",
+    image: "/work/generative-goods.jpeg",
+    category: "NFT & Collectibles",
+    description:
+      "",
+    clientUrl: "https://www.generativegoods.com/",
+    workUrl: "https://x.com/generativegoods/status/1729140727068946704?s=20",
+    workLinkType: "tweet",
+    featured: true,
+  },
+  {
+    id: "white-walls",
+    name: "White Walls",
+    image: "/work/white-walls.jpeg",
+    category: "L2 & Infrastructure",
+    description:
+      "",
+    clientUrl: "https://www.whitewalls.art/",
+    workUrl: "https://x.com/whitewallsapp/status/1774883211186676186?s=20",
+    workLinkType: "tweet",
+    featured: true,
   },
 ];
 
 export const projectCategories: ProjectCategory[] = [
   "All",
   "NFT & Collectibles",
-  "DeFi",
   "DAO",
   "Web3 Gaming",
   "L2 & Infrastructure",

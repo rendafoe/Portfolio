@@ -10,7 +10,7 @@ const WORK_LINK_ICONS: Record<Exclude<LinkType, "website">, string> = {
 };
 
 const WORK_LINK_LABELS: Record<Exclude<LinkType, "website">, string> = {
-  tweet: "Example",
+  tweet: "Work",
   article: "Article",
 };
 
@@ -98,7 +98,7 @@ export default function Work() {
         </div>
 
         {/* Card grid */}
-        <div className="lg:ml-[calc(200px+5rem)]">
+        <div>
           <AnimatePresence mode="wait">
             <motion.div
               key={activeFilter}
@@ -106,7 +106,7 @@ export default function Work() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="grid md:grid-cols-2 gap-8"
+              className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
             >
               {filtered.map((project, i) => (
                 <motion.div
@@ -119,7 +119,7 @@ export default function Work() {
                 >
                   {/* Hero image */}
                   {project.image && (
-                    <div className="w-full h-[180px] overflow-hidden border-b border-rule">
+                    <div className="w-full h-[160px] overflow-hidden border-b border-rule">
                       <img
                         src={project.image}
                         alt={project.name}
@@ -153,7 +153,7 @@ export default function Work() {
                     )}
 
                     {/* Links */}
-                    {(project.clientUrl || (project.workUrl && project.workLinkType)) && (
+                    {(project.clientUrl || (project.workUrl && project.workLinkType) || project.testimonialUrl) && (
                       <div className="flex flex-wrap gap-2">
                         {project.clientUrl && (
                           <LinkBadge label="Website" icon="↗" url={project.clientUrl} />
@@ -164,6 +164,9 @@ export default function Work() {
                             icon={WORK_LINK_ICONS[project.workLinkType]}
                             url={project.workUrl}
                           />
+                        )}
+                        {project.testimonialUrl && (
+                          <LinkBadge label="Testimonial" icon="❝" url={project.testimonialUrl} />
                         )}
                       </div>
                     )}

@@ -9,8 +9,8 @@
 export const meta = {
   title: "Brian Brown — Product Marketer",
   description:
-    "Co-founder of SHILLR, 100-mile trail runner, and senior PMM with $50M+ in client results across 40+ Web3 companies.",
-  ogImage: "/og-image.png",
+    "Co-Founder of SHILLR and Product Marketer with $50M+ in client revenue across 40+ Web3 companies.",
+  ogImage: "/new-og-image.jpg",
 };
 
 // ---- HERO ---------------------------------------------------

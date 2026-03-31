@@ -66,7 +66,7 @@ export const timeline: TimelineEntry[] = [
     company: "SHILLR",
     location: "Minneapolis, MN (Remote)",
     summary:
-      "Built and scaled a Web3 marketing agency from zero to 40 clients, driving $50M+ in client sales through product marketing.",
+      "Built and scaled a Web3 marketing agency from 0 to 40 clients, driving $50M+ in client sales through product marketing.",
     bullets: [
       "Led GTM strategy and product launch campaigns for 40 Web3 clients, driving $50M+ in sales revenue across NFTs, SocialFi, DAOs, Gaming, Tooling & L2s",
       "Developed positioning, messaging, and go-to-market execution for key launches including “Quine” by Larva Labs ($14M in sales), Prohibition Art (First Art Blocks Contract on L2), Nifty Island (1.2M Impressions in Launch Month) & Alien Frens (31k ETH in Lifetime Sales)",
@@ -177,7 +177,7 @@ export const projects: Project[] = [
   {
     id: "konsek",
     name: "Konsek",
-    image: "/work/konsek.jpeg",
+    image: "/work/konsek2.png",
     category: "Personal",
     description:
       "Vibe coded an app that uses Strava runs to keep a virtual pet alive. Available on desktop and mobile. Built with Next.js, Supabase, and Strava API.",
@@ -197,6 +197,19 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    id: "prohibition",
+    name: "Prohibition Art",
+    image: "/work/prohibition.jpeg",
+    category: "NFT & Collectibles",
+    description:
+      "Owned the GTM strategy from scratch, launching the first Art Blocks contract on an L2. Developed the positioning, artist onboarding strategy and social media content plan.",
+    clientUrl: "https://www.artblocks.io/partners/prohibition",
+    workUrl: "https://x.com/ProhibitionArt/status/1678453894735699979?s=20",
+    workLinkType: "tweet",
+    testimonialUrl: "https://x.com/JordanLyall/status/1840851080193982654?s=20",
+    featured: true,
+  },
+  {
     id: "nifty-island",
     name: "Nifty Island",
     image: "/work/nifty-island.jpeg",
@@ -211,7 +224,7 @@ export const projects: Project[] = [
   {
     id: "gas-wars",
     name: "Gas Wars by Jack Butcher",
-    image: "/work/jack-butcher.png",
+    image: "/work/jack-butcher3.png",
     category: "NFT & Collectibles",
     description:
       "Owned the marketing campaign for the latest networked generative artwork by Jack Butcher. Wrote social media copy, developed email strategy, and coordinated a live artist interview to promote the release.",
@@ -257,18 +270,6 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: "prohibition",
-    name: "Prohibition Art",
-    image: "/work/prohibition.jpeg",
-    category: "NFT & Collectibles",
-    description:
-      "Owned the GTM strategy from scratch, launching the first Art Blocks contract on an L2. Developed the positioning, artist onboarding strategy and social media content plan.",
-    clientUrl: "https://www.artblocks.io/partners/prohibition",
-    workUrl: "https://x.com/ProhibitionArt/status/1678453894735699979?s=20",
-    workLinkType: "tweet",
-    featured: true,
-  },
-  {
     id: "xx",
     name: "XX DAO",
     image: "/work/xx-dao.jpeg",
@@ -283,7 +284,7 @@ export const projects: Project[] = [
   {
     id: "hologram",
     name: "Hologram",
-    image: "/work/hologram.jpeg",
+    image: "/work/hologram2.jpeg",
     category: "L2 & Infrastructure",
     description:
       "Managed GTM strategy and execution for the launch of a Desktop Studio & Chrome Extension which enables users to leverage their NFTs as video filters across Zoom, Google Meet and Twitch.",
@@ -374,12 +375,13 @@ export const projects: Project[] = [
     clientUrl: "https://mmerch.com/",
     workUrl: "https://x.com/shillrxyz/status/1836527270665896214?s=20",
     workLinkType: "tweet",
+    testimonialUrl: "https://x.com/MinnieMuse_eth/status/1783553499332046999?s=20",
     featured: true,
   },
   {
     id: "skill-issue",
     name: "Skill Issue",
-    image: "/work/skill-issue.jpeg",
+    image: "/work/skill-issue3.png",
     category: "NFT & Collectibles",
     description:
       "Executed GTM playbook for an NFT & token loot box, owning social media strategy across multiple channels, coordinating influencer partnerships and managing user feedback.",
@@ -388,11 +390,12 @@ export const projects: Project[] = [
   {
     id: "garden",
     name: "The Garden by SHILLR",
-    image: "/work/garden.jpeg",
+    image: "/work/garden.png",
     category: "NFT & Collectibles",
     description:
       "3-Day event series at NFT NYC 2024. Over 500 attendees. Partnered with Base, Arbitrum, Optimism, Infinite Objects and Superchief Gallery.",
     clientUrl: "https://x.com/shillrxyz/status/1775228691276001607",
+    testimonialUrl: "https://x.com/EfdotStudio/status/1775655348528979987?s=20",
     featured: true,
   },
   {
@@ -410,7 +413,7 @@ export const projects: Project[] = [
   {
     id: "mobile-gallery",
     name: "Mobile Art Gallery by SHILLR",
-    image: "/work/van.jpeg",
+    image: "/work/van.png",
     category: "NFT & Collectibles",
     description:
       "Showcased the work of 1,000+ artists in a mobile gallery between New York and Miami. Pro-bono project to support emerging artists in the space.",
@@ -426,6 +429,30 @@ export const projects: Project[] = [
       "Supported product launch and user acquisition for a new NFT display solution, converting any TV into a high-end digital art frame.",
     clientUrl: "https://www.whitewalls.art/",
     workUrl: "https://x.com/whitewallsapp/status/1774883211186676186?s=20",
+    workLinkType: "tweet",
+    featured: true,
+  },
+  {
+    id: "thread",
+    name: "Daily Artist Deep Dives",
+    image: "/work/thread.png",
+    category: "Personal",
+    description:
+      "Wrote deep-dive threads on X for 80 days straight, highlighting a new emerging digital artist every single day.",
+    clientUrl: "https://x.com/bernardo_cafe/status/1617580987189440512",
+    workUrl: "https://x.com/bernardo_cafe/status/1617595300599693338?s=20",
+    workLinkType: "tweet",
+    featured: true,
+  },
+  {
+    id: "generat3d",
+    name: "GENERAT3D",
+    image: "/work/generat3d3.png",
+    category: "Personal",
+    description:
+      "Hosted a live interview series dedicated to conversing with artists & builders in AI, computing and code-based art.",
+    clientUrl: "https://x.com/shillrxyz/status/1831690399691272682?s=20",
+    workUrl: "https://x.com/shillrxyz/status/1755986246248071462?s=20",
     workLinkType: "tweet",
     featured: true,
   },

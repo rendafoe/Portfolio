@@ -200,7 +200,7 @@ export const projects: Project[] = [
     id: "prohibition",
     name: "Prohibition Art",
     image: "/work/prohibition.jpeg",
-    category: "NFT & Collectibles",
+    category: "L2 & Infrastructure",
     description:
       "Owned the GTM strategy from scratch, launching the first Art Blocks contract on an L2. Developed the positioning, artist onboarding strategy and social media content plan.",
     clientUrl: "https://www.artblocks.io/partners/prohibition",
@@ -323,7 +323,7 @@ export const projects: Project[] = [
     image: "/work/chain-runners.jpeg",
     category: "Web3 Gaming",
     description:
-      "Crafted positioning and narrative to promote the second major product from Chain Runners: fully rigged 3D characters models suitable for gaming and the metaverse.",
+      "Crafted positioning and narrative to promote the second major product from Chain Runners: fully-rigged 3D characters models suitable for gaming and the metaverse.",
     clientUrl: "https://x.com/chain_runners",
     workUrl: "https://x.com/chain_runners/status/1562886024836960258?s=20",
     workLinkType: "tweet",
@@ -384,7 +384,7 @@ export const projects: Project[] = [
     image: "/work/skill-issue3.png",
     category: "NFT & Collectibles",
     description:
-      "Executed GTM playbook for an NFT & token loot box, owning social media strategy across multiple channels, coordinating influencer partnerships and managing user feedback.",
+      "Executed GTM playbook for an NFT & token loot box app, owning social media strategy across multiple channels, coordinating influencer partnerships and managing user feedback.",
     featured: true,
   },
   {
@@ -416,7 +416,7 @@ export const projects: Project[] = [
     image: "/work/van.png",
     category: "NFT & Collectibles",
     description:
-      "Showcased the work of 1,000+ artists in a mobile gallery between New York and Miami. Pro-bono project to support emerging artists in the space.",
+      "Showcased the work of 1,000+ artists in a mobile gallery between New York and Miami. Pro-bono project to support emerging artists in Web3.",
     clientUrl: "https://x.com/shillrxyz/status/1592595927558418432",
     featured: true,
   },

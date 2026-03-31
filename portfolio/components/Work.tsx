@@ -173,20 +173,6 @@ export default function Work() {
                   </div>
                 </motion.div>
               ))}
-
-              {/* Add More placeholder card */}
-              <motion.div
-                initial="hidden"
-                animate={inView ? "visible" : "hidden"}
-                custom={filtered.length + 2}
-                variants={fadeUp}
-                className="bg-background p-8 flex flex-col items-center justify-center gap-3 border-2 border-dashed border-rule/60 min-h-[280px]"
-              >
-                <span className="text-4xl text-rule font-serif">+</span>
-                <span className="label-caps text-ink-faint text-center">
-                  More work available on request
-                </span>
-              </motion.div>
             </motion.div>
           </AnimatePresence>
         </div>

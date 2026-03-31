@@ -155,7 +155,7 @@ export const projects: Project[] = [
     image: "/work/ab500.png",
     category: "NFT & Collectibles",
     description:
-      "Go-to-market strategy and community marketing for one of the most recognized generative art platforms in Web3. Led positioning, launch campaigns, and collector acquisition across primary and secondary markets.",
+      "Launched the Art Blocks 500, a campaign to round out the definitive onchain generative art canon. Led positioning, content strategy and collector acquisition across social and email.",
     clientUrl: "https://artblocks.io",
     workUrl: "https://x.com/artblocks_io/status/1953120356945842542?s=20",
     workLinkType: "tweet",
@@ -167,7 +167,7 @@ export const projects: Project[] = [
     image: "/work/quine.jpeg",
     category: "NFT & Collectibles",
     description:
-      "",
+      "Code Generates Art ⇄ Art Generates Code. Owned the GTM strategy and launch execution for the latest art release by Larva Labs, the creators of CryptoPunks. $14M in primary sales.",
     clientUrl: "https://larvalabs.com/quine",
     workUrl: "https://x.com/artblocks_io/status/1975591966944440521?s=20",
     workLinkType: "tweet",
@@ -175,15 +175,13 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: "gas-wars",
-    name: "Gas Wars by Jack Butcher",
-    image: "/work/jack-butcher.png",
-    category: "NFT & Collectibles",
+    id: "konsek",
+    name: "Konsek",
+    image: "/work/konsek.jpeg",
+    category: "Personal",
     description:
-      "",
-    clientUrl: "https://www.artblocks.io/exhibitions/gas-wars-by-jack-butcher",
-    workUrl: "https://x.com/artblocks_io/status/1968021508522963293?s=20",
-    workLinkType: "tweet",
+      "Vibe coded an app that uses Strava runs to keep a virtual pet alive. Available on desktop and mobile. Built with Next.js, Supabase, and Strava API.",
+    clientUrl: "https://konsek.vercel.app/",
     featured: true,
   },
   {
@@ -195,67 +193,7 @@ export const projects: Project[] = [
     workUrl: "https://x.com/FLAMINGODAO/status/1863991996035064205?s=20",
     workLinkType: "tweet",
     description:
-      "Member marketing and communications strategy for a leading NFT-focused investment DAO. Developed messaging frameworks, community engagement strategy, and public-facing positioning.",
-    featured: true,
-  },
-  {
-    id: "the-lao",
-    name: "The LAO",
-    image: "/work/the-lao.jpeg",
-    category: "DAO",
-    clientUrl: "https://x.com/TheLAOOfficial",
-    workUrl: "https://x.com/TheLAOOfficial/status/1907440371241562131",
-    workLinkType: "tweet",
-    description:
-      "",
-    featured: true,
-  },
-  {
-    id: "xx",
-    name: "XX DAO",
-    image: "/work/xx-dao.jpeg",
-    category: "DAO",
-    clientUrl: "https://x.com/xxdao_xyz",
-    workUrl: "https://x.com/xxdao_xyz/status/1883944319251271916?s=20",
-    workLinkType: "tweet",
-    description:
-      "",
-    featured: true,
-  },
-  {
-    id: "neon",
-    name: "Neon DAO",
-    image: "/work/neon-dao.jpeg",
-    category: "DAO",
-    clientUrl: "https://x.com/neon_dao",
-    workUrl: "https://x.com/neon_dao/status/1944765042953445632?s=20",
-    workLinkType: "tweet",
-    description:
-      "",
-    featured: true,
-  },
-  {
-    id: "glimmer",
-    name: "Glimmer DAO",
-    image: "/work/glimmer-dao.jpeg",
-    category: "DAO",
-    clientUrl: "https://x.com/glimmerdao",
-    workUrl: "https://x.com/glimmerdao/status/1945898854227771438?s=20",
-    workLinkType: "tweet",
-    description:
-      "",
-    featured: true,
-  },
-  {
-    id: "genie",
-    name: "Genie (acquired by Uniswap)",
-    image: "/work/genie.png",
-    category: "L2 & Infrastructure",
-    clientUrl: "https://x.com/geniexyz",
-    workUrl: "https://x.com/shillrxyz/status/1424821743827435529",
-    workLinkType: "tweet",
-    description:
-      "Growth marketing support ahead of Uniswap acquisition. Built brand awareness and user acquisition strategies in the emerging NFT aggregator space — helping the team tell a clear story at a critical inflection point.",
+      "Developed messaging frameworks, community engagement strategy, and public-facing positioning to highlight the 9-figure NFT collection of the leading art collector DAO.",
     featured: true,
   },
   {
@@ -267,53 +205,31 @@ export const projects: Project[] = [
     workUrl: "https://x.com/niftyisland/status/1737558987019587770?s=20",
     workLinkType: "tweet",
     description:
-      "Player acquisition and community GTM strategy for a social gaming platform built on Web3. Led launch-phase marketing, community flywheel design, and cross-ecosystem partnership narratives.",
+      "GTM strategy for public beta launch, including aggressive player acquisition, influencer coordination, partnership management and community building for a Web3 gaming ecosystem.",
     featured: false,
   },
   {
-    id: "prohibition",
-    name: "Prohibition Art",
-    image: "/work/prohibition.jpeg",
+    id: "gas-wars",
+    name: "Gas Wars by Jack Butcher",
+    image: "/work/jack-butcher.png",
     category: "NFT & Collectibles",
     description:
-      "",
-    clientUrl: "https://www.artblocks.io/partners/prohibition",
-    workUrl: "https://x.com/ProhibitionArt/status/1678453894735699979?s=20",
+      "Owned the marketing campaign for the latest networked generative artwork by Jack Butcher. Wrote social media copy, developed email strategy, and coordinated a live artist interview to promote the release.",
+    clientUrl: "https://www.artblocks.io/exhibitions/gas-wars-by-jack-butcher",
+    workUrl: "https://x.com/artblocks_io/status/1968021508522963293?s=20",
     workLinkType: "tweet",
     featured: true,
   },
   {
-    id: "konsek",
-    name: "Konsek",
-    image: "/work/konsek.jpeg",
-    category: "Personal",
-    description:
-      "",
-    clientUrl: "https://konsek.vercel.app/",
-    featured: true,
-  },
-  {
-    id: "hologram",
-    name: "Hologram",
-    image: "/work/hologram.jpeg",
-    category: "L2 & Infrastructure",
-    description:
-      "",
-    clientUrl: "https://holoworld.com/",
-    workUrl: "https://x.com/HologramLabs/status/1573022294171353088",
+    id: "the-lao",
+    name: "The LAO",
+    image: "/work/the-lao.jpeg",
+    category: "DAO",
+    clientUrl: "https://x.com/TheLAOOfficial",
+    workUrl: "https://x.com/TheLAOOfficial/status/1907440371241562131",
     workLinkType: "tweet",
-    featured: true,
-  },
-  {
-    id: "hume",
-    name: "Hume",
-    image: "/work/hume.jpeg",
-    category: "NFT & Collectibles",
     description:
-      "",
-    clientUrl: "https://www.wearehume.com/",
-    workUrl: "https://x.com/wearehume/status/1549781634517307393",
-    workLinkType: "tweet",
+      "Comprehensive social media execution for one of the oldest venture DAOs focused on early-stage crypto investments.",
     featured: true,
   },
   {
@@ -322,9 +238,81 @@ export const projects: Project[] = [
     image: "/work/darcels.png",
     category: "NFT & Collectibles",
     description:
-      "",
+      "GTM strategy, social media execution and community building from Day 0 for a generative profile picture project, resulting in 11,000 ETH in lifetime sales.",
     clientUrl: "https://www.dourdarcels.io/",
     workUrl: "https://x.com/DourDarcelsNFT/status/1499163571548082176?s=20",
+    workLinkType: "tweet",
+    featured: true,
+  },
+  {
+    id: "genie",
+    name: "Genie (acquired by Uniswap)",
+    image: "/work/genie.png",
+    category: "L2 & Infrastructure",
+    clientUrl: "https://x.com/geniexyz",
+    workUrl: "https://x.com/shillrxyz/status/1424821743827435529",
+    workLinkType: "tweet",
+    description:
+      "Product marketing for a new NFT sweeper tool. Built brand awareness and user acquisition strategies through value propositions in the emerging NFT aggregator space.",
+    featured: true,
+  },
+  {
+    id: "prohibition",
+    name: "Prohibition Art",
+    image: "/work/prohibition.jpeg",
+    category: "NFT & Collectibles",
+    description:
+      "Owned the GTM strategy from scratch, launching the first Art Blocks contract on an L2. Developed the positioning, artist onboarding strategy and social media content plan.",
+    clientUrl: "https://www.artblocks.io/partners/prohibition",
+    workUrl: "https://x.com/ProhibitionArt/status/1678453894735699979?s=20",
+    workLinkType: "tweet",
+    featured: true,
+  },
+  {
+    id: "xx",
+    name: "XX DAO",
+    image: "/work/xx-dao.jpeg",
+    category: "DAO",
+    clientUrl: "https://x.com/xxdao_xyz",
+    workUrl: "https://x.com/xxdao_xyz/status/1883944319251271916?s=20",
+    workLinkType: "tweet",
+    description:
+      "Owned and operated the social media presence for an art collector DAO focused on emerging onchain generative artists.",
+    featured: true,
+  },
+  {
+    id: "hologram",
+    name: "Hologram",
+    image: "/work/hologram.jpeg",
+    category: "L2 & Infrastructure",
+    description:
+      "Managed GTM strategy and execution for the launch of a Desktop Studio & Chrome Extension which enables users to leverage their NFTs as video filters across Zoom, Google Meet and Twitch.",
+    clientUrl: "https://holoworld.com/",
+    workUrl: "https://x.com/HologramLabs/status/1573022294171353088",
+    workLinkType: "tweet",
+    featured: true,
+  },
+  {
+    id: "neon",
+    name: "Neon DAO",
+    image: "/work/neon-dao.jpeg",
+    category: "DAO",
+    clientUrl: "https://x.com/neon_dao",
+    workUrl: "https://x.com/neon_dao/status/1944765042953445632?s=20",
+    workLinkType: "tweet",
+    description:
+      "Owned and operated the social media presence for an NFT collector DAO focused on metaverse and fully onchain art.",
+    featured: true,
+  },
+  {
+    id: "hume",
+    name: "Hume",
+    image: "/work/hume.jpeg",
+    category: "NFT & Collectibles",
+    description:
+      "Marketing strategy and positioning for a Web3 record label leveraging popular NFT IP to launch 'meta-stars'.",
+    clientUrl: "https://www.wearehume.com/",
+    workUrl: "https://x.com/wearehume/status/1549781634517307393",
     workLinkType: "tweet",
     featured: true,
   },
@@ -334,7 +322,7 @@ export const projects: Project[] = [
     image: "/work/chain-runners.jpeg",
     category: "Web3 Gaming",
     description:
-      "",
+      "Crafted positioning and narrative to promote the second major product from Chain Runners: fully rigged 3D characters models suitable for gaming and the metaverse.",
     clientUrl: "https://x.com/chain_runners",
     workUrl: "https://x.com/chain_runners/status/1562886024836960258?s=20",
     workLinkType: "tweet",
@@ -346,7 +334,7 @@ export const projects: Project[] = [
     image: "/work/poap.jpeg",
     category: "NFT & Collectibles",
     description:
-      "",
+      "Generated product awareness through IRL Scavenger Hunt in NYC. First client for SHILLR.",
     clientUrl: "https://poap.xyz/",
     workUrl: "https://x.com/poapxyz/status/1435642235681484820?s=20",
     workLinkType: "tweet",
@@ -358,20 +346,22 @@ export const projects: Project[] = [
     image: "/work/alien-frens.png",
     category: "NFT & Collectibles",
     description:
-      "",
+      "Supported the '12 Days of Frensmas' campaign to promote their release, contribtuing to 31,000 ETH in lifetime sales.",
     clientUrl: "https://x.com/alienfrens",
     workUrl: "https://x.com/alienfrens/status/1469383208210866186",
     workLinkType: "tweet",
     featured: true,
   },
   {
-    id: "nff",
-    name: "Non-Fungible Fungi",
-    image: "/work/nff.jpeg",
-    category: "NFT & Collectibles",
+    id: "glimmer",
+    name: "Glimmer DAO",
+    image: "/work/glimmer-dao.jpeg",
+    category: "DAO",
+    clientUrl: "https://x.com/glimmerdao",
+    workUrl: "https://x.com/glimmerdao/status/1945898854227771438?s=20",
+    workLinkType: "tweet",
     description:
-      "",
-    clientUrl: "https://x.com/FungibleFungi",
+      "Owned and operated the social media presence for an art collector DAO focused on emerging artists from Asia.",
     featured: true,
   },
   {
@@ -380,7 +370,7 @@ export const projects: Project[] = [
     image: "/work/mmerch.jpeg",
     category: "NFT & Collectibles",
     description:
-      "",
+      "Supported the launch of the first physical generative fashion release, promoting the drop through collector education, founder interviews and grassroots marketing.",
     clientUrl: "https://mmerch.com/",
     workUrl: "https://x.com/shillrxyz/status/1836527270665896214?s=20",
     workLinkType: "tweet",
@@ -392,7 +382,7 @@ export const projects: Project[] = [
     image: "/work/skill-issue.jpeg",
     category: "NFT & Collectibles",
     description:
-      "",
+      "Executed GTM playbook for an NFT & token loot box, owning social media strategy across multiple channels, coordinating influencer partnerships and managing user feedback.",
     featured: true,
   },
   {
@@ -401,18 +391,8 @@ export const projects: Project[] = [
     image: "/work/garden.jpeg",
     category: "NFT & Collectibles",
     description:
-      "",
+      "3-Day event series at NFT NYC 2024. Over 500 attendees. Partnered with Base, Arbitrum, Optimism, Infinite Objects and Superchief Gallery.",
     clientUrl: "https://x.com/shillrxyz/status/1775228691276001607",
-    featured: true,
-  },
-  {
-    id: "mobile-gallery",
-    name: "Mobile Art Gallery by SHILLR",
-    image: "/work/van.jpeg",
-    category: "NFT & Collectibles",
-    description:
-      "",
-    clientUrl: "https://x.com/shillrxyz/status/1592595927558418432",
     featured: true,
   },
   {
@@ -421,10 +401,20 @@ export const projects: Project[] = [
     image: "/work/generative-goods.jpeg",
     category: "NFT & Collectibles",
     description:
-      "",
+      "Developed positioning and GTM strategy for a new physical product line combining generative art technology with home goods.",
     clientUrl: "https://www.generativegoods.com/",
     workUrl: "https://x.com/generativegoods/status/1729140727068946704?s=20",
     workLinkType: "tweet",
+    featured: true,
+  },
+  {
+    id: "mobile-gallery",
+    name: "Mobile Art Gallery by SHILLR",
+    image: "/work/van.jpeg",
+    category: "NFT & Collectibles",
+    description:
+      "Showcased the work of 1,000+ artists in a mobile gallery between New York and Miami. Pro-bono project to support emerging artists in the space.",
+    clientUrl: "https://x.com/shillrxyz/status/1592595927558418432",
     featured: true,
   },
   {
@@ -433,7 +423,7 @@ export const projects: Project[] = [
     image: "/work/white-walls.jpeg",
     category: "L2 & Infrastructure",
     description:
-      "",
+      "Supported product launch and user acquisition for a new NFT display solution, converting any TV into a high-end digital art frame.",
     clientUrl: "https://www.whitewalls.art/",
     workUrl: "https://x.com/whitewallsapp/status/1774883211186676186?s=20",
     workLinkType: "tweet",
@@ -468,7 +458,7 @@ export const personal = {
 
 export const contact = {
   headline: "Let's talk.",
-  subline: "Currently exploring senior PMM opportunities in crypto and fintech.",
+  subline: "Currently exploring PMM opportunities in crypto and fintech.",
   email: "Brownrobertbrian@gmail.com",
   links: [
     {

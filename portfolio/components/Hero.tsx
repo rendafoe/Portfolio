@@ -118,7 +118,7 @@ export default function Hero() {
           </a>
           <a
             href={hero.ctas.secondary.href}
-            download
+            download="Brian Brown Resume.pdf"
             className="inline-flex items-center gap-2 border border-ink text-ink font-sans font-medium px-7 py-3.5 text-sm tracking-wide hover:bg-ink hover:text-background transition-colors"
           >
             {hero.ctas.secondary.label}

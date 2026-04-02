@@ -21,7 +21,7 @@ export const hero = {
   tagline: "Crypto-Native Product Marketer & Founder.",
   ctas: {
     primary: { label: "View My Work", href: "#work" },
-    secondary: { label: "Download Resume", href: "/resume.pdf" },
+    secondary: { label: "Download Resume", href: "/resume" },
   },
 };
 
